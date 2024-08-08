@@ -1,5 +1,9 @@
+# import sys
+# sys.path.append(r'C:\Users\Sarfaraz\Desktop\jarvis')
+
+
 import os
-from pipes import quote
+from shlex import quote
 import re
 import sqlite3
 import struct
@@ -176,7 +180,7 @@ def whatsApp(mobile_no, message, flag, name):
 # chat bot 
 def chatBot(query):
     user_input = query.lower()
-    chatbot = hugchat.ChatBot(cookie_path="engine\cookies.json")
+    chatbot = hugchat.ChatBot(cookie_path="engine\\cookies.json")
     id = chatbot.new_conversation()
     chatbot.change_conversation(id)
     response =  chatbot.chat(user_input)
