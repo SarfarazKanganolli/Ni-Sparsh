@@ -1,0 +1,10 @@
+eel
+pyaudio
+pyautogui
+playsound
+pywhatkit
+pvporcupine
+hugchat
+pyttsx3
+speechrecognition
+multiprocessing-logging
